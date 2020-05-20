@@ -5,7 +5,7 @@ const db = require('./models/shortDB')
 
 const port = process.env.PORT || 5000;;
 
-mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/urlShortener', {
+mongoose.connect(process.env.MONGODB_URI||'mongodb://mongo:27017/urlShortener', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
